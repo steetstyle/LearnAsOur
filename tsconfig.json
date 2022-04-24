@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"lib": [
+			"dom",
+			"es2015",
+			"es2016",
+			"es2017"
+		],
+		"paths": {
+			"@components": [ "./src/@components/" ],
+			"@helpers": [ "./src/@helpers/" ],
+			"@screens": [ "./src/@screens/" ],
+			"@styles": [ "./src/@styles/" ],
+			"@constants": [ "./src/@constants/" ],
+			"@contexts": [ "./src/@contexts/" ],
+			"@components/*": [ "./src/@components/*" ],
+			"@helpers/*": [ "./src/@helpers/*" ],
+			"@screens/*": [ "./src/@screens/*" ],
+			"@styles/*": [ "./src/@styles/*" ],
+			"@constants/*": [ "./src/@constants/*" ],
+			"@contexts/*": [ "./src/@contexts/* ]" ]
+		},
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"noImplicitAny": false,
+		"allowJs": true,
+		"jsx": "react-jsx",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"strict": true,
+		"esModuleInterop": true,
+	    "isolatedModules": true /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
+    	"moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+    	"noEmit": true /* Do not emit outputs. */,
+
+	},
+	"include": ["next-env.d.ts", "twin.d.ts", "**/*.ts", "**/*.tsx", "./src/*", "./src/@contexts"],
+	"exclude": ["node_modules"],
+}
