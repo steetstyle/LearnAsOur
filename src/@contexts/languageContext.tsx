@@ -132,26 +132,32 @@ export const LanguageContextProvider = ({ children }: { children: React.ReactNod
 	const getRandomLanguageSuggestion = useCallback(() => {
 		const randomSuggestionSelectIndex = Math.floor(Math.random() * 4)
 
+		const randomIndex = Math.floor(Math.random() * 500) - 1
+		return {
+			type: 'verb',
+			verb: russianVerbs[randomIndex]
+		}
+
 		if (randomSuggestionSelectIndex === 0) {
-			const randomIndex = Math.floor(Math.random() * russian.adjectives.length) - 1
+			const randomIndex = Math.floor(Math.random() * 500) - 1
 			return {
 				type: 'adjective',
 				adjective: russianAdjectives[randomIndex]
 			}
 		} else if (randomSuggestionSelectIndex === 1) {
-			const randomIndex = Math.floor(Math.random() * russian.nouns.length) - 1
+			const randomIndex = Math.floor(Math.random() * 500) - 1
 			return {
 				type: 'noun',
 				noun: russianNouns[randomIndex]
 			}
 		} else if (randomSuggestionSelectIndex === 2) {
-			const randomIndex = Math.floor(Math.random() * russian.others.length) - 1
+			const randomIndex = Math.floor(Math.random() * 500) - 1
 			return {
 				type: 'other',
 				other: russianOthers[randomIndex]
 			}
 		} else if (randomSuggestionSelectIndex === 3){
-			const randomIndex = Math.floor(Math.random() * russian.verbs.length) - 1
+			const randomIndex = Math.floor(Math.random() * 500) - 1
 			return {
 				type: 'verb',
 				verb: russianVerbs[randomIndex]

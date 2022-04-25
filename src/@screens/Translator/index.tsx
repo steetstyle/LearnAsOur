@@ -12,7 +12,6 @@ export const Translator = () : ReactElement => {
 	useEffect(() => {
 		window.MainAPI.setSizeOfMainWindow({ width: 250, height: 150 })
 
-
 		setTimeout(() => {
 			if(! (russian.adjectives.length > 0)) return
 			const suggestion = getRandomLanguageSuggestion()

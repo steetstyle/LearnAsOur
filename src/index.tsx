@@ -7,5 +7,11 @@ if(! container) throw new Error('rootContainerNotFound')
 // Create a root.
 const root = ReactDOMClient.createRoot(container);
 
+import { Fragment } from 'react';
+
 // Initial render: Render an element to the root.
-root.render(<App />);
+root.render(
+	<Fragment>
+		<App />
+    </Fragment>
+);

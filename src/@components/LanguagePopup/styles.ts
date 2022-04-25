@@ -19,6 +19,14 @@ width: 100%;
 color: yellow;
 `
 
+export const WordType = styled.p`
+font-size: 14px;
+color: red;
+position: absolute;
+top: 10px;
+left: 15px;
+`
+
 export const WordStress = styled.p`
 font-size: 18px;
 color: gray;
@@ -30,7 +38,11 @@ color: white;
 `
 
 export const WordTranslated = styled.p`
-margin-left: 8px;
 font-size: 18px;
 color: yellow;
+`
+
+export const WordInput = styled.div`
+height: 150px;
+background: yellow;
 `

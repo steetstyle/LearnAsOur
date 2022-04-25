@@ -11,6 +11,7 @@ to {
 
 export const Container = styled.div`
 height: 132px;
+width: 250px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -18,7 +19,7 @@ justify-content: center
 `
 
 export const Image = styled.img`
-width: 240px;
+width: 2405px;
 animation: ${rotate} 15s linear infinite;
 `
 
